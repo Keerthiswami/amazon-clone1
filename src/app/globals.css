@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .headerItem {
+    @apply px-2 border border-transparent hover:border-white duration-300 cursor-pointer flex items-center justify-center h-[70%];
+  }
+  .link {
+    @apply border border-white/10 hover:border-amazonYellowDark hover:text-white py-1 px-2 cursor-pointer duration-200;
+  }
+  .footerLink {
+    @apply hover:underline text-sm hover:text-gray-100 cursor-pointer mb-2 duration-150;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Responsive Utilities */
+  .responsive-padding {
+    @apply p-4 md:p-6 lg:p-8;
+  }
+  .responsive-margin {
+    @apply m-4 md:m-6 lg:m-8;
+  }
+  .responsive-text {
+    @apply text-base md:text-lg lg:text-xl;
+  }
+}
+
+/* Custom Media Queries */
+@media (max-width: 640px) {
+  .headerItem {
+    @apply h-[50%];
+  }
+  .link {
+    @apply text-sm;
+  }
+  .footerLink {
+    @apply text-xs;
+  }
+}
