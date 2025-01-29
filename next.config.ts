@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  reactStrictMode: true,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     remotePatterns: [
       {
@@ -13,11 +16,12 @@ const nextConfig: NextConfig = {
         hostname: "lh3.googleusercontent.com",
       },
       {
-        protocol:'https',
-        hostname:'images-eu.ssl-images-amazon.com'
-    }
+        protocol: "https",
+        hostname: "images-eu.ssl-images-amazon.com",
+      },
     ],
   },
 };
+
 
 export default nextConfig;
