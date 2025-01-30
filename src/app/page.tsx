@@ -1,5 +1,4 @@
 import CarouselBanner from "../app/components/CarosuelBanner";
-import ProductsList from "../app/components/ProductList";
 import { Metadata } from "next";
 import HomePage from "./components/HomePage";
 
